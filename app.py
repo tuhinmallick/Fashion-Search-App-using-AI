@@ -14,7 +14,7 @@ def main():
     if st.button("Search"):
         if len(query) > 0:
             results = multimodal_search.search(query)
-            st.warning("Your query was "+query)
+            st.warning(f"Your query was {query}")
             st.subheader("Search Results:")
             col1, col2, col3 = st.columns([1,1,1])
             with col1:
